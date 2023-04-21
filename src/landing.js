@@ -12,21 +12,17 @@ import firebaseConfig from '../src/firebaseConfig'
 initializeApp(firebaseConfig);
 
 console.log("Hello world we are online!")
-const preloaderId = "preloader"
-const preloaderAnimationClasses = 'jumbotron h-100 d-flex align-items-center justify-content-center bg-dark fade-out'
 
-function setFadeIn() {
-	setTimeout(setFadeOut, 500)
+function startPreloaderAnimation() {
+	const preloaderId = "preloader"
+	const preloaderAnimationClasses = 'jumbotron h-100 d-flex align-items-center justify-content-center bg-dark fade-out'
+	setTimeout(() => {
+		document.getElementById(preloaderId).className = preloaderAnimationClasses
+		setTimeout(() => {
+			document.getElementById(preloaderId).remove()
+			document.body.className = ''
+		}, 1300)
+	}, 500)
 }
 
-function removePreloaderElement() {
-	document.getElementById(preloaderId).remove()
-	document.body.className = ''
-}
-
-function setFadeOut() {
-	document.getElementById(preloaderId).className = preloaderAnimationClasses
-	setTimeout(removePreloaderElement, 1300)
-}
-
-window.onload = setFadeIn()
+window.onload = startPreloaderAnimation()
