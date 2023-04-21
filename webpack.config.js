@@ -21,8 +21,14 @@ module.exports = {
     output: {
       path: path.join(__dirname, 'public'),
       filename: 'js/[name]-bundle.js', // Hacky way to force webpack   to have multiple output folders vs multiple files per one path
+      library: 'Landing', 
+      libraryTarget: 'umd',   // Important
+      umdNamedDefine: true   // Important
     },
       // Optional and for development only. This provides the ability to
   // map the built code back to the original source format when debugging.
   devtool: 'eval-source-map',
+  devServer: {
+    injectClient: false
+},
 };
