@@ -92,7 +92,7 @@ html {
   transition: 1s opacity;
 }
 
-.title-text {
+.title-text, .subtitle-text {
   color: var(--first-color);
   font-family: 'Audiowide', cursive;
 
@@ -109,6 +109,10 @@ html {
   .title-text {
     font-size: 3rem;
   }
+
+  .subtitle-text {
+    font-size: 1rem;
+  }
 }
 
 /*  Medium devices (tablets, 768px and up) */
@@ -116,12 +120,20 @@ html {
   .title-text {
     font-size: 4rem;
   }
+
+  .subtitle-text {
+    font-size: 2rem;
+  }
 }
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .title-text {
     font-size: 6rem;
+  }
+
+  .subtitle-text {
+    font-size: 4rem;
   }
 }
 
