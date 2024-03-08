@@ -64,7 +64,7 @@ body {
 
 
 html {
-  background: #2f3943;
+  background: #000000;
 }
 
 #hero {
@@ -92,76 +92,9 @@ html {
   transition: 1s opacity;
 }
 
-body {
-  background: linear-gradient(164deg, #212529, #2f3943, #4a5796, #667eea, #8296f1);
-  background-size: 1000% 1000%;
-
-  -webkit-animation: AnimationName 14s ease infinite;
-  -moz-animation: AnimationName 14s ease infinite;
-  -o-animation: AnimationName 14s ease infinite;
-  animation: AnimationName 14s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 45% 0%
-  }
-
-  50% {
-    background-position: 56% 100%
-  }
-
-  100% {
-    background-position: 45% 0%
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 45% 0%
-  }
-
-  50% {
-    background-position: 56% 100%
-  }
-
-  100% {
-    background-position: 45% 0%
-  }
-}
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 45% 0%
-  }
-
-  50% {
-    background-position: 56% 100%
-  }
-
-  100% {
-    background-position: 45% 0%
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 45% 0%
-  }
-
-  50% {
-    background-position: 56% 100%
-  }
-
-  100% {
-    background-position: 45% 0%
-  }
-}
-
 .title-text {
   color: var(--first-color);
   font-family: 'Audiowide', cursive;
-
 
 }
 
@@ -174,21 +107,21 @@ body {
 @media (min-width: 576px) {
 
   .title-text {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
 /*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .title-text {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .title-text {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
@@ -201,7 +134,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .navbar {
-    background-color: rgba(33, 37, 41, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
   }
 
   .lead {

@@ -15,7 +15,7 @@ console.log("Hello world we are online!")
 
 function startPreloaderAnimation() {
 	const preloaderId = "preloader"
-	const preloaderAnimationClasses = 'jumbotron h-100 d-flex align-items-center justify-content-center bg-dark fade-out'
+	const preloaderAnimationClasses = 'jumbotron h-100 d-flex align-items-center justify-content-center bg-black fade-out'
 	setTimeout(() => {
 		document.getElementById(preloaderId).className = preloaderAnimationClasses
 		setTimeout(() => {
