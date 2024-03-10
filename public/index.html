@@ -69,22 +69,27 @@
                     <p class="lead mt-3 text-white text-center">I am a Software Engineer providing solutions from
                         Argentina to the world</p>1
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                            onclick="logAnalyticsEvent('MORE_ABOUT_ME')">
                             <a href="#experience" style="text-decoration:none">More about me</a>
                         </button>
-                        <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">
+                        <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2"
+                            onclick="logAnalyticsEvent('VIEW_RESUME')">
                             <a href="https://play.google.com/store/apps/details?id=com.joniaranguri.resumeapp"
                                 target="_blank" style="text-decoration:none">View Resume</a>
                         </button>
                     </div>
                     <div class=" gap-2 d-flex justify-content-center mt-3">
                         <a class="btn btn-primary btn-lg btn-floating"
-                            href="https://www.linkedin.com/in/jonathan-aranguri/" target="_blank" role="button"><i
+                            href="https://www.linkedin.com/in/jonathan-aranguri/"
+                            onclick="logAnalyticsEvent('VIEW_LINKEDIN')" target="_blank" role="button"><i
                                 class="bi bi-linkedin"></i></a>
                         <a class="btn btn-primary btn-lg btn-floating" href="https://github.com/joniaranguri"
-                            target="_blank" role="button"><i class="bi bi-github"></i></a>
+                            onclick="logAnalyticsEvent('VIEW_GITHUB')" target="_blank" role="button"><i
+                                class="bi bi-github"></i></a>
                         <a class="btn btn-primary btn-lg btn-floating" href="https://www.youtube.com/@thinkingcoder"
-                            target="_blank" role="button"><i class="bi bi-youtube"></i></a>
+                            onclick="logAnalyticsEvent('VIEW_YOUTUBE')" target="_blank" role="button"><i
+                                class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -360,7 +365,8 @@
                                         Have an exciting project? Let's boost it together! <br>As an experienced
                                         Android developer, I turn visions into seamless mobile app realities.
                                     </p>
-                                    <button type="button" class="read_more_btn">
+                                    <button type="button" class="read_more_btn"
+                                        onclick="logAnalyticsEvent('SERVICE_MOBILE_DEVELOPMENT')">
                                         <a href="https://calendly.com/joniaranguri/let-s-talk" target="_blank"
                                             style="text-decoration:none">Schedule an intro meeting</a></button>
                                 </div>
@@ -378,7 +384,8 @@
                                         fundamentals to advanced topics with video lectures, hands-on exercises, and
                                         real-world projects.
                                     </p>
-                                    <button type="button" class="read_more_btn">
+                                    <button type="button" class="read_more_btn"
+                                        onclick="logAnalyticsEvent('SERVICE_ONLINE_COURSES')">
                                         <a href="https://forms.gle/94QF3xnKpT3g2kWX9" target="_blank"
                                             style="text-decoration:none">Start Learning Today</a></button>
                                 </div>
@@ -397,7 +404,8 @@
                                         Elevate your Android skills with personalized coaching. <br>From beginners to
                                         advanced developers, get direct guidance, code reviews, and strategic career
                                         advice. </p>
-                                    <button type="button" class="read_more_btn">
+                                    <button type="button" class="read_more_btn"
+                                        onclick="logAnalyticsEvent('SERVICE_COACHING_SESSION')">
                                         <a href="https://calendly.com/joniaranguri/let-s-talk" target="_blank"
                                             style="text-decoration:none">Book Your Coaching Session</a></button>
                                 </div>
@@ -413,7 +421,8 @@
                                         Ensure your app stands out. <br>Collaborate on a design strategy for a visually
                                         appealing and user-friendly experience. Let's make your app captivating.
                                     </p>
-                                    <button type="button" class="read_more_btn">
+                                    <button type="button" class="read_more_btn"
+                                        onclick="logAnalyticsEvent('SERVICE_APP_DESIGN_CONSULTATION')">
                                         <a href="https://calendly.com/joniaranguri/let-s-talk" target="_blank"
                                             style="text-decoration:none">Optimize My App's Design</a></button>
                                 </div>
